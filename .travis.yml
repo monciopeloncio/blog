@@ -10,9 +10,6 @@ branches:
   only:
     - master
 
-r_github_packages:
-  - hadley/devtools
-
 before_script:
 - nvm install node
 - npm install -g netlify-cli
