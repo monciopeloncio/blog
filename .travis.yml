@@ -1,0 +1,23 @@
+# R for travis: see documentation at https://docs.travis-ci.com/user/languages/r
+
+language: R
+sudo: false
+cache:
+  packages: true
+  directories:
+  - $HOME/.npm
+branches:
+  only: 
+    - master
+  
+
+before_script:
+- nvm install node
+- npm install -g netlify-cli
+- Rscript -e 'blogdown::install_hugo()'
+
+script:
+- Rscript -e 'blogdown::build_site(local = Sys.getenv("TRAVIS_PULL_REQUEST_BRANCH") != "")'
+
+after_success:
+- ./deploy.sh
