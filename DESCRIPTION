@@ -1,0 +1,11 @@
+Title: The source code for the R-ladies website
+Version: 1.0
+Authors@R: person("Hernández", "Bea", email = "bea@rladies.org", role = c("aut", "cre"))
+Description: The source code for the R-ladies website
+Depends: R (>= 3.5.0)
+Encoding: UTF-8
+LazyData: true
+Imports:
+    blogdown,
+RoxygenNote: 6.0.1.9000
+Remotes:
