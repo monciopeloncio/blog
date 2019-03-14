@@ -10,8 +10,8 @@ branches:
   only:
     - master
 
-r_packages:
-  - devtools
+r_github_packages:
+  - hadley/devtools
 
 before_script:
 - nvm install node
