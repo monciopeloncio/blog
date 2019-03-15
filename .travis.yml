@@ -12,7 +12,7 @@ branches:
 
 ## Use patched devtools
 r_github_packages:
-  - hadley/devtools
+  - hadley/devtools@efa894ffa
 
 before_script:
 - nvm install node
