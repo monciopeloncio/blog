@@ -4,5 +4,6 @@ Authors@R: person("Hernández", "Bea", email = "bea@rladies.org", role = c("aut"
 Description: The source code for the R-ladies website
 Encoding: UTF-8
 Imports:
-    blogdown
+    blogdown,
+    rtweet
 Remotes:
