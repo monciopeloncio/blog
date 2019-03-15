@@ -5,5 +5,6 @@ Description: The source code for the R-ladies website
 Encoding: UTF-8
 Imports:
     blogdown,
-    rtweet
+    rtweet,
+    gridExtra
 Remotes:
