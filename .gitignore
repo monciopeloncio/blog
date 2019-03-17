@@ -87,3 +87,6 @@ $RECYCLE.BIN/
 
 # End of https://www.gitignore.io/api/r,hugo,macos,windows
 .Rproj.user
+
+# Netlify
+.netlify/

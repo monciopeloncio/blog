@@ -4,8 +4,7 @@ language: R
 sudo: false
 cache:
   packages: true
-  directories:
-  - $HOME/.npm
+  
 branches:
   only:
     - master
@@ -15,8 +14,6 @@ r_github_packages:
   - hadley/devtools@efa894ffa
 
 before_script:
-- nvm install node
-- npm install -g netlify-cli
 - chmod +x deploy.sh
 - Rscript -e 'blogdown::install_hugo()'
 
