@@ -4,9 +4,9 @@ echo "You are on branch $TRAVIS_BRANCH"
 echo "The TRAVIS_PULL_REQUEST_BRANCH is $TRAVIS_PULL_REQUEST_BRANCH"
 if [[ "$TRAVIS_PULL_REQUEST_BRANCH" = "" ]]
 then
-	  echo "you are on master, deploying production."
+	  echo "You are on master, deploying production."
 	  netlify deploy --prod --dir=docs
-else 
-    echo "you are not on master, deploying preview."
+else
+    echo "You are not on master, deploying preview."
     netlify deploy --dir=docs
 fi
