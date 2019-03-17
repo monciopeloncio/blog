@@ -6,10 +6,10 @@ if [[ "$TRAVIS_PULL_REQUEST_BRANCH" = "" ]]
 then
 	zip -r r-ladies.zip docs/
 
-curl -H "Content-Type: application/zip" \
-	 -H "Authorization: Bearer $NETLIFYKEY" \
-	 --data-binary "@r-ladies.zip" \
-     https://api.netlify.com/api/v1/sites/<Your site domain name>/deploys
+	curl -H "Content-Type: application/zip" \
+		 -H "Authorization: Bearer $NETLIFYKEY" \
+		 --data-binary "@r-ladies.zip" \
+	     https://api.netlify.com/api/v1/sites/<Your site domain name>/deploys
 else
     echo "You are not on master, deploying preview."
 fi
