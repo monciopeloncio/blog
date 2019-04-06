@@ -4,7 +4,7 @@ language: R
 sudo: false
 cache:
   packages: true
-  
+
 branches:
   only:
     - master
@@ -14,6 +14,7 @@ r_github_packages:
   - hadley/devtools@efa894ffa
 
 before_script:
+- apt-get install libstdc++6
 - chmod +x deploy.sh
 - Rscript -e 'blogdown::install_hugo()'
 
